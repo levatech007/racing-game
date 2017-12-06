@@ -1,8 +1,41 @@
+<!DOCTYPE HTML>
 <html>
   <head>
+    <meta charset="utf-8">
+    <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- link to custom stylesheet (always require after Bootstrap) -->
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <!-- jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script type="text/javascript" src="js/app.js"></script>
     <title>Racing Game</title>
   </head>
   <body>
-    Racing game
+
+    <!-- header with name, instructions and start button-->
+      <div class="container">
+        <div class="row justify-content-md-center center-text">
+            <h2>Racing Game</h2>
+            <button type="button" class="btn btn-info btn-lg">START</button>
+        </div>
+
+
+    <main> <!-- PlayBoard -->
+      <div class="row justify-content-md-center">
+        <div class="col-md-10" id="playboard">
+          <div class="row justify-content-md-center sections">
+            <div class="col-md-1 cube" id="egg1"></div> <!-- egg1 -->
+            <div class="col-md-1  offset-md-1 cube" id="egg2"></div> <!-- egg2 -->
+            <div class="col-md-1  offset-md-1 cube" id="egg3"></div> <!-- egg3 -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    </div>
   </body>
 </html>
