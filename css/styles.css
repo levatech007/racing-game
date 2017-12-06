@@ -16,8 +16,8 @@ button {
 
 .cube {
   height: 100px;
-  border: 1px solid gray;
   padding: 0;
+  opacity: 1;
 }
 
 .cube img {
