@@ -1,8 +1,12 @@
 
 
+body {
+  background-color: #66FF66;
+}
+
 #playboard {
   background-color: lightgray;
-  height: 500px;
+  height: 600px;
   border: 2px solid gray;
 }
 
@@ -12,10 +16,15 @@ button {
 
 .cube {
   height: 100px;
-  width: 100px;
-  background-color: blue;
+  border: 1px solid gray;
+  padding: 0;
+}
+
+.cube img {
+  height: 90px;
 }
 
 .center-text {
   text-align: center;
+  margin: 10px 0;
 }
