@@ -1,0 +1,21 @@
+
+
+#playboard {
+  background-color: lightgray;
+  height: 500px;
+  border: 2px solid gray;
+}
+
+button {
+  margin-left: 50px;
+}
+
+.cube {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}
+
+.center-text {
+  text-align: center;
+}
