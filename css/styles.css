@@ -23,6 +23,15 @@ button {
   border-radius: 5px;
 }
 
+.playboard-win {
+  padding-top: 50px;
+  font-size: 1000%;
+  text-align: center;
+  color: gray;
+}
+
+
+
 .cube {
   height: 100px;
   padding: 0;
