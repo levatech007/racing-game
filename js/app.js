@@ -16,7 +16,7 @@ $(document).ready(function() {
     },randomDuration(2000, 3500));
   };
 
-  $(".cube").append(eggImage);                  
+  $(".cube").append(eggImage);
 
   $("button").on("click", function() {          // clicking on START button calls the function
 
@@ -28,10 +28,11 @@ $(document).ready(function() {
       didntReachBottom += 1                   // the egg will not reach bottom and 1 is added to didntReacheBottom variable
       $(this).css("opacity", "0");            // change opacity of the clicked item to hide it
 
-        if (didntReachBottom == numOfElements) {         // check the number of eggs that did not reach the bottom, if it is equal to
-          alert("You win!");                             // alert player that they won
+        if (didntReachBottom === numOfElements) {         // check the number of eggs that did not reach the bottom, if it is equal to
+          //alert("You win!");
+          $("#playboard").addClass("playboard-win").text("You win!");
+          $(".cube").css("margin", "-496px");                   // alert player that they won
         };
-
       });
     });
     //reset board
