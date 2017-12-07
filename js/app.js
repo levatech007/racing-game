@@ -30,8 +30,7 @@ $(document).ready(function() {
 
         if (didntReachBottom === numOfElements) {         // check the number of eggs that did not reach the bottom, if it is equal to
           //alert("You win!");
-          $("#playboard").addClass("playboard-win").text("You win!");
-          $(".cube").css("margin", "-496px");                   // alert player that they won
+          $("#playboard").addClass("playboard-win").text("You win!"); // alert player that they won
         };
       });
     });
