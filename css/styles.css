@@ -1,17 +1,26 @@
 
 
 body {
-  background-color: #66FF66;
+  background-color: #99FF99;
 }
 
-#playboard {
-  background-color: lightgray;
-  height: 600px;
-  border: 2px solid gray;
+p {
+  font-size: 120%;
+  color: gray;
 }
 
 button {
   margin-left: 50px;
+  padding: 0 20px;
+}
+
+#playboard {
+  background-image: url("../images/tree_frame.svg"), url("../images/grass.svg");
+  background-position: left bottom, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  height: 600px;
+  border: 2px solid gray;
+  border-radius: 5px;
 }
 
 .cube {
