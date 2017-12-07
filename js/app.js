@@ -2,16 +2,17 @@ console.log("js is linked");
 
 $(document).ready(function() {
 
-  let eggImage = `<img src="images/egg.svg" >`
-  let numOfElements = $(".cube").length
-  let didntReachBottom = 0    // counter for how many boxes reach bottom
+  let eggImage = `<img src="images/egg.svg" >`;
+  let numOfElements = $(".cube").length;
+  let didntReachBottom = 0;    // counter for how many boxes reach bottom
+  let winText = "You win!";
 
   function randomDuration(min, max) {                     // generates a random nuber for duration of jQuery .animate()
     return Math.floor(Math.random() * (max-min) + min);
   };
 
-  function animateEggs(idx) {
-    $(`#egg${idx}`).delay(randomDuration(0, 1500)).animate({
+  function animateEggs(numOfEggs) {                             // creates the 'dropping' animation for each item
+    $(`#egg${numOfEggs}`).delay(randomDuration(0, 1500)).animate({
       "margin-top":"+=496px"
     },randomDuration(2000, 3500));
   };
@@ -25,14 +26,12 @@ $(document).ready(function() {
    };
 
     $(".cube").on("click", function(e) {      // when the egg is clicked, it dissapears
-      didntReachBottom += 1                   // the egg will not reach bottom and 1 is added to didntReacheBottom variable
+      didntReachBottom += 1                   // the egg will not "reach bottom" and 1 is added to didntReacheBottom variable
       $(this).css("opacity", "0");            // change opacity of the clicked item to hide it
 
         if (didntReachBottom === numOfElements) {         // check the number of eggs that did not reach the bottom, if it is equal to
-          //alert("You win!");
-          $("#playboard").addClass("playboard-win").text("You win!"); // alert player that they won
+          $("#playboard").addClass("playboard-win").text(winText); // alert player that they won
         };
       });
     });
-    //reset board
   });
